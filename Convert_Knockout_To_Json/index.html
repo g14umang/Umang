@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <h1>JavaScript object to JSON String</h1>
+</head>
+<body style="background-color:yellowgreen;text-align: center;">
+    <div>
+    <label for="firstName"><b>First Name:</b></label>
+    <input type="text" name="firstName" id="firstName" placeholder="Enter Your FirstName">
+    </div>
+    <div style="padding-top: 10px;">
+        <label for="lastName"><b>Last Name:</b></label>
+        <input type="text" name="lastName" id="lastName" placeholder="Enter Your lastName">
+    </div>
+    
+    <div style="padding-top: 20px;">
+        <button  data-bind="click:onSubmit" >Create JSON String</button>
+        <button   data-bind="click:onJSObject" >Create Javascript Object</button>
+    </div>
+    <div id="root"></div>    
+    <script src="js/main.js"></script>
+</body>
+</html>
